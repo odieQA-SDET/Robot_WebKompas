@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0 (Python 3.12.2 on win32)" generated="2024-03-11T02:10:46.375775" rpa="false" schemaversion="5">
+<suite id="s1" name="TC3.SearchBerita" source="C:\Users\DPD JmI Jabar\PycharmProjects\Robot_WebKompas\TestCases\TC3.SearchBerita.robot">
+<test id="s1-t1" name="Search and Click Berita Yang Tampil Ke-2 with Valid Keyword" line="10">
+<kw name="Open Browser To Cari Berita" owner="Resource.Login">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:10:46.626693" level="INFO">Opening browser 'chrome' to base url 'http://www.kompas.com/'.</msg>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-03-11T02:10:46.626693" elapsed="12.772732"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-03-11T02:10:59.400426" elapsed="0.141931"/>
+</kw>
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2024-03-11T02:10:59.543396" elapsed="0.000000"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:10:59.545758" level="INFO">Clicking element 'xpath://input[@id='search']'.</msg>
+<arg>xpath://input[@id='search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T02:10:59.543396" elapsed="0.211477"/>
+</kw>
+<status status="PASS" start="2024-03-11T02:10:46.626160" elapsed="13.128713"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:10:59.755399" level="INFO">Clicking element 'xpath://input[@id='search']'.</msg>
+<arg>xpath://input[@id='search']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T02:10:59.755399" elapsed="0.088844"/>
+</kw>
+<kw name="Input Text" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:10:59.844243" level="INFO">Typing text 'BERITA' into text field 'id:search'.</msg>
+<arg>id:search</arg>
+<arg>${SEARCH_KEYWORD}</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T02:10:59.844243" elapsed="0.205152"/>
+</kw>
+<kw name="Press Keys" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:11:00.050398" level="INFO">Sending key(s) ('ENTER',) to id:search element.</msg>
+<msg time="2024-03-11T02:11:00.383812" level="INFO">Pressing special key ENTER to element.</msg>
+<msg time="2024-03-11T02:11:00.383812" level="INFO">Releasing special key ENTER.</msg>
+<arg>id:search</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<status status="PASS" start="2024-03-11T02:11:00.049395" elapsed="2.441125"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T02:11:06.492139" level="INFO">Slept 4 seconds.</msg>
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T02:11:02.490520" elapsed="4.001619"/>
+</kw>
+<kw name="Step To Search The Keyword BERITA" owner="Resource.Login">
+<kw name="Scroll Second News" owner="Resource.Login">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://div[@class='gsc-resultsbox-visible']//div[2]//div[1]//div[3]//div[2]//div[3]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-11T02:11:06.494139" elapsed="0.301390"/>
+</kw>
+<status status="PASS" start="2024-03-11T02:11:06.494139" elapsed="0.301390"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T02:11:09.795901" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T02:11:06.795529" elapsed="3.000372"/>
+</kw>
+<kw name="Click Second News" owner="Resource.Login">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:11:09.796908" level="INFO">Clicking element 'xpath://*[@id="___gcse_0"]/div/div/div/div[5]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/a'.</msg>
+<arg>xpath://*[@id="___gcse_0"]/div/div/div/div[5]/div[2]/div/div/div[1]/div[2]/div/div[1]/div/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-03-11T02:11:09.796908" elapsed="2.740255"/>
+</kw>
+<status status="PASS" start="2024-03-11T02:11:09.795901" elapsed="2.741262"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T02:11:15.538527" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T02:11:12.537163" elapsed="3.001364"/>
+</kw>
+<kw name="Scroll Page News Footer Bottom" owner="Resource.Login">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://p[contains(text(),'Copyright 2008 - 2023 PT. Kompas Cyber Media (Komp')]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-11T02:11:15.538527" elapsed="0.293702"/>
+</kw>
+<status status="PASS" start="2024-03-11T02:11:15.538527" elapsed="0.293702"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T02:11:18.833504" level="INFO">Slept 3 seconds.</msg>
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T02:11:15.833230" elapsed="3.000274"/>
+</kw>
+<kw name="Scroll Paging Page News" owner="Resource.Login">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<arg>xpath://div[@class='paging__wrap clearfix']</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" start="2024-03-11T02:11:18.835188" elapsed="0.351137"/>
+</kw>
+<status status="PASS" start="2024-03-11T02:11:18.834637" elapsed="0.351688"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-03-11T02:11:24.187849" level="INFO">Slept 5 seconds.</msg>
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-03-11T02:11:19.186325" elapsed="5.001524"/>
+</kw>
+<kw name="Scroll Paging 1 Page News Bottom Part A" owner="Resource.Login">
+<kw name="Scroll Element Into View" owner="SeleniumLibrary">
+<msg time="2024-03-11T02:11:24.521793" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-03-11T02:11:24.521793" level="FAIL">Element with locator 'xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]' not found.</msg>
+<arg>xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="FAIL" start="2024-03-11T02:11:24.189856" elapsed="0.342191">Element with locator 'xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-03-11T02:11:24.188860" elapsed="0.344191">Element with locator 'xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]' not found.</status>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-11T02:11:24.533051" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Paging 1 Page News Bottom Part B" owner="Resource.Login">
+<status status="NOT RUN" start="2024-03-11T02:11:24.533051" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-11T02:11:24.534053" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Paging 1 Page News Bottom Part C" owner="Resource.Login">
+<status status="NOT RUN" start="2024-03-11T02:11:24.534053" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-11T02:11:24.534053" elapsed="0.000000"/>
+</kw>
+<kw name="Scroll Paging 1 Page News Top" owner="Resource.Login">
+<status status="NOT RUN" start="2024-03-11T02:11:24.535050" elapsed="0.000000"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<arg>4</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" start="2024-03-11T02:11:24.535050" elapsed="0.000000"/>
+</kw>
+<kw name="Close Browser" owner="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="NOT RUN" start="2024-03-11T02:11:24.535050" elapsed="0.000000"/>
+</kw>
+<status status="FAIL" start="2024-03-11T02:11:06.493142" elapsed="18.041908">Element with locator 'xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]' not found.</status>
+</kw>
+<status status="FAIL" start="2024-03-11T02:10:46.625046" elapsed="37.910996">Element with locator 'xpath://html/body/div[1]/div[2]/div[4]/div[1]/div[2]/div[1]/div[10]/a/div/div[2]' not found.</status>
+</test>
+<doc>A test suite with a single test for search berita.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" start="2024-03-11T02:10:46.376774" elapsed="38.161268"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="TC3.SearchBerita">TC3.SearchBerita</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
